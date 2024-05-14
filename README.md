@@ -1,10 +1,11 @@
-# Web Starter
+Type only for HEAT (1995)
+web project to expirement with only CSS typography 
 
-> Computers are dumb. Humans make them smart.
+Mann wrote the original script for Heat in 1979, basing it on Chicago police officer Chuck Adamson's pursuit of criminal Neil McCauley, after whom De Niro's character is named
 
-Starter (boilerplate) for all future projects.
+## these are the CSS concepts I applied: 
 
-## Why Does This Exist?
-* Don't start with nothing
-* Common boilerplate for web projects
-* I am a human being who makes mistakes
+*typography 
+*box model
+*css variables 
+
