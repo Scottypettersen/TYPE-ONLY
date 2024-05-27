@@ -2,28 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <title>Heat (1995)</title>
+    <style>
+        body {
+            background-color: #111; 
+            font-family: 'Courier New', monospace;
+            color: #eee;
+            text-align: center;
+            margin: 0; 
+        }
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+        header {
+            padding: 2rem 0; 
+            background: linear-gradient(to bottom, #333, #111); 
+        }
 
-    <!-- Scripts -->
-    <script src="script.js" defer></script>
-    
-    <title>Heat</title>
+        /* Optional: Neon Text Style (if you have it) */
+        .neon-text {
+            /* ... your neon text styles ... */
+        }
+
+        .fire-text {
+            color: #ff4500; 
+            text-shadow:
+                0 0 10px #f00,
+                0 0 20px #f00,
+                0 0 30px #f00,
+                0 0 40px #ff8000; 
+            animation: flicker 1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #ff8000; }
+            100% { text-shadow: 0 0 10px #f87, 0 0 20px #f87, 0 0 30px #f87, 0 0 40px #ffa500; }
+        }
+
+        main section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .movie-poster img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #333;
+        }
+
+        .movie-details h2 {
+            margin-bottom: 1rem; 
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        .highlight-word {
+            color: red; 
+        }
+
+        .more-info-button {
+            display: block;         /* Make it a block element for centering */
+            padding: 10px 20px;  
+            background-color: #ff4500; 
+            color: #fff; 
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow:           
+                0 0 10px #f00, 
+                0 0 20px #f00,
+                0 0 30px #f00,
+                0 0 40px #ff8000;
+            animation: flicker 1s infinite alternate; 
+            cursor: pointer;
+            margin: 20px auto;    /* Center horizontally and add margin top */
+        }
+    </style>
 </head>
 <body>
-    
-        
-    <h1>HEAT (1995)</h1>
-<p>Heat is a 1995 American crime film[3] written and directed by Michael Mann. It features an ensemble cast led by Al Pacino and Robert De Niro, with Val Kilmer, Tom Sizemore, Diane Venora, Amy Brenneman, Ashley Judd, Wes Studi, Jon Voight, Ted Levine, Dennis Haysbert, and Danny Trejo in supporting roles.[4] The film follows the conflict between an LAPD detective (played by Pacino) and a career criminal (played by De Niro) while also depicting its effect on their professional relationships and personal lives.</p>
-
+    <header>
+        <h1 class="neon-text"><span class="fire-text">Heat</span></h1> 
+    </header>
+    <main>
+        <section class="movie-details">
+            <h2>"A Los Angeles Crime Saga"</h2>
+            <p class="tagline">Don't let yourself get attached to anything you are not willing to walk out on in 30 seconds flat if you feel the <span class="highlight-word">heat</span> around the corner.
+                <br>
+                Heat is a 1995 American crime film written and directed by Michael Mann. It features an ensemble cast led by Al Pacino and Robert De Niro, with Val Kilmer, Tom Sizemore, Diane Venora, Amy Brenneman, Ashley Judd, Wes Studi, Jon Voight, Ted Levine, Dennis Haysbert, and Danny Trejo in supporting roles.<br> The film follows the conflict between an LAPD detective (played by Pacino) and a career criminal (played by De Niro) 
+            </p>
+        </section>
+        <button class="more-info-button">More Info</button> </main>
 </body>
 </html>

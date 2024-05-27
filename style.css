@@ -1,3 +1,83 @@
 body {
-    background: salmon;
+  background-color: #111;
+  font-family: 'Courier New', monospace;
+  color: #eee;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  padding: 2rem 0;
+  background: linear-gradient(to bottom, #333, #111);
+}
+
+/* Optional: Neon Text Style (if you have it) */
+.neon-text {
+  /* ... your neon text styles ... */
+}
+
+.fire-text {
+  color: #ff4500;
+  text-shadow:
+      0 0 10px #f00,
+      0 0 20px #f00,
+      0 0 30px #f00,
+      0 0 40px #ff8000;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #ff8000; }
+  100% { text-shadow: 0 0 10px #f87, 0 0 20px #f87, 0 0 30px #f87, 0 0 40px #ffa500; }
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
+.movie-details h2 {
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.highlight-word {
+  color: red;
+
+
+}
+
+button {font-color:black}
+
+/* More Info Button Styling */
+.more-info-button {
+display: block;    
+padding: 10px 20px; 
+background-color: black; /* 90s grunge background */
+color: #ff4500; /* Fiery orange text */
+border: 2px solid #ff8000; /* Brighter orange border */
+font-family: 'Impact', 'Arial Black', sans-serif; /* Bold, impactful fonts */
+font-size: 1.2rem;
+letter-spacing: 1px; /* Slight letter spacing for that 90s feel */
+text-transform: uppercase;
+border-radius: 0; /* Sharp corners for a grungy look */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 90s drop shadow */
+cursor: pointer;
+margin: 20px auto;
+transition: all 0.3s ease; 
+}
+
+/* Hover Effect */
+.more-info-button:hover {
+background-color: #ff6600; /* Darker orange on hover */
+color: black; 
+transform: translateY(-2px); /* Simple lift on hover */
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6); /* Darker shadow */
 }
